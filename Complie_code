@@ -1,1 +1,1 @@
-clang++-7 -pthread -std=c++17 -o test test.cpp
+clang++-7 -pthread -std=c++17 -o t t.cpp
