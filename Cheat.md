@@ -1,5 +1,11 @@
 # cpp
 
+## std::vector
+```cpp
+#include <vector>
+vector.size()
+```
+
 ## std::string
 
 `std::erase()`
@@ -30,3 +36,27 @@ dq.pop_fron(2);
 dq.clear();
 ```
 
+
+## str::map
+`std::map<key[Data Type], value[Data Type]> map`
+dictionary 역할
+
+```cpp
+//insert
+map[key]=value; // value 지정 안하면 0 들어감
+map.insert(make_pair(key,value));
+
+map.erase(key);
+
+map.count(key); // 존재하면 1 없으면 0 반환
+
+// 값 변경
+map[key]+=a;
+map[key]=value;
+
+//delete
+map.erase('A');
+
+// 모든 값 찾기
+for (map<char, int>::iterator it = m.begin(); it != m.end(); it++) cout << it->first << ' ' << it->second << '\n';
+```
