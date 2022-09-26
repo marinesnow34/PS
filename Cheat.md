@@ -1,5 +1,14 @@
 # cpp
 
+## 자료형
+int –2,147,483,648 ~ 2,147,483,647
+
+long long (%lld) –9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
+
+double 1.7E +/- 308 (15 digits)
+
+접미사 (long long) LL ex) 0LL
+
 ## std::vector
 ```cpp
 #include <vector>
