@@ -9,6 +9,13 @@ double 1.7E +/- 308 (15 digits)
 
 접미사 (long long) LL ex) 0LL
 
+## 문자열
+```cpp
+cin.ignore(); // 입력버퍼 초기화
+getline(cin, string); // 한 줄 입력
+reverse(string.begin(), string.end()); //문자열 뒤집기
+```
+
 ## std::vector
 ```cpp
 #include <vector>
