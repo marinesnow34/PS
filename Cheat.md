@@ -76,3 +76,60 @@ map.erase('A');
 // 모든 값 찾기
 for (map<char, int>::iterator it = m.begin(); it != m.end(); it++) cout << it->first << ' ' << it->second << '\n';
 ```
+
+
+## Sort
+```cpp
+bool comp(pair<int, pair<int, int> > a, pair<int, pair<int, int> > b){
+    if(a.first == b.first){
+        if(a.second.first == b.second.first) return a.second.second < b.second.second; // 1, 2 같으면 3작은거
+        return a.second.first < b.second.first; // 1 같으면 2 작은거
+    }
+    return a.first < b.first; // 1작은거
+} 
+
+sort(v.begin(), v.end(), com;
+```
+
+## 유클리드 호제법(GCD)
+```cpp
+int gcd(int a, int b){
+  int c;
+  whlie(b){
+    c = a % b;
+    a = b;
+    b = c;
+  }
+  return a;
+}
+int gcd(int a, int b){
+	return b ? gcd(b, a%b) : a;
+}
+```
+
+## 소수 판정
+```cpp
+bool prime(int n){
+  for(int i = 2; i * i <= n; i++){
+    if(n % i == 0) return false;
+  }
+  return true;
+}
+```
+
+## 이진 탐색
+```cpp
+int binarySearch(int data[], int size, int d)
+{
+    int s = 0; //시작
+    int e = size - 1; //끝
+    int m;
+    while (s <= e) {
+        m = (s + e) / 2;
+        if (data[m] == d) return m;
+        else if (data[m] > d) e = m - 1;
+        else s = m + 1;
+    }
+    return -1;
+}
+```
