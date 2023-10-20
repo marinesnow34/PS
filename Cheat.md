@@ -59,7 +59,7 @@ dictionary 역할
 
 ```cpp
 //insert
-map[key]=value; // value 지정 안하면 0 들어감
+map[key]=value; // value 지정 안하면 0 들어감 즉 값이 없는 값 부르면 0
 map.insert(make_pair(key,value));
 
 map.erase(key);
