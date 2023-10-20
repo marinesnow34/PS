@@ -19,6 +19,8 @@ reverse(string.begin(), string.end()); //문자열 뒤집기
 ## std::vector
 ```cpp
 #include <vector>
+cin >> n;
+vector<vector<int>> m(n,vector<int>(n,k)); // m[n][n] 모든 값 k
 vector.size()
 ```
 
