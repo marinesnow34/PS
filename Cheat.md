@@ -189,3 +189,24 @@ void topologySort() {
 	}
 }
 ```
+
+## 백트래킹
+```cpp
+void sol(int a){
+    if(a == M){
+        for(int i = 0; i < M; i++){
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+        return;
+    }
+    for(int i = 1; i <= N; i++){
+        if(!vis[i]){
+            vis[i] = true;
+            arr[a] = i;
+            sol(a+1);
+            vis[i] = false;
+        }
+    }
+}
+```
