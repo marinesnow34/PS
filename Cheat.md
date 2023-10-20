@@ -192,6 +192,10 @@ void topologySort() {
 
 ## 백트래킹
 ```cpp
+int N, M;
+int arr[10];
+bool vis[10] = {false, };
+
 void sol(int a){
     if(a == M){
         for(int i = 0; i < M; i++){
@@ -208,5 +212,9 @@ void sol(int a){
             vis[i] = false;
         }
     }
+}
+
+int main(){
+    sol(0);
 }
 ```
