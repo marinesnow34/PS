@@ -34,6 +34,17 @@ str.erase(const_iterator p); // 한 글자
 str.erase(const_iterator first, const_iterator last); //범위
 ```
 
+## std::bitset
+
+```cpp
+bitset<4> a{0xA};
+bitset<4> a{10};
+bitset<4> a{"1010"};
+a[0] = 1; // a = 1011
+a.to_string(); // "1011"
+a.to_ullong(); // 11
+```
+
 ## str::pair
 `std::pair<T1, T2> p`
 
