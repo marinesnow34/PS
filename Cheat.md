@@ -88,6 +88,9 @@ map.erase('A');
 
 // 모든 값 찾기
 for (map<char, int>::iterator it = m.begin(); it != m.end(); it++) cout << it->first << ' ' << it->second << '\n';
+for (const auto& pair : m) {
+    std::cout << pair.first << ' ' << pair.second << '\n';
+}
 ```
 
 
