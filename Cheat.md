@@ -150,7 +150,8 @@ int binarySearch(int data[], int size, int d)
 }
 ```
 ## union find
-```cppint getParent(int parent[], int x) {
+```cpp
+int getParent(int parent[], int x) {
 	if(parent[x] == x) return x;
 	return parent[x] = getParent(parent, parent[x]);
 }
