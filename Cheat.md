@@ -104,7 +104,7 @@ bool comp(pair<int, pair<int, int> > a, pair<int, pair<int, int> > b){
     return a.first < b.first; // 1작은거
 } 
 
-sort(v.begin(), v.end(), com;
+sort(v.begin(), v.end(), comp);
 ```
 
 ## 유클리드 호제법(GCD)
@@ -149,6 +149,33 @@ int binarySearch(int data[], int size, int d)
     return -1;
 }
 ```
+
+```cpp
+int lower_bound(int s, int e) {
+    int m;
+    while(e-s > 0)
+     {
+        m = (s+e)/2;
+        if(A[m] < k) s=m+1;
+        else e = m;
+    }
+    return e;
+}
+```
+
+```cpp
+int upper_bound(int s, int e){
+    int m;
+    while(e-s > 0)
+    {
+        m = (s+e)/2;
+        if(A[m] <= k) s=m+1;
+        else e=m;
+    }
+    return e;
+}
+```
+
 ## union find
 ```cpp
 int getParent(int parent[], int x) {
@@ -172,7 +199,6 @@ int findParent(int parent[], int a, int b) {
 	else return 0;
 }
 ```
-
 
 ## 위상 정렬
 
